@@ -120,8 +120,8 @@ if __name__ == '__main__':
     if mode == "1":
         findseat()
     elif mode == "2":
-        username = "2020110019"
-        password = "097256"
+        username = ""
+        password = ""
         res = login(username, password)
         print(res)
         information = json.loads(res)
