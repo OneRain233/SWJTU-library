@@ -19,7 +19,7 @@ def ocr(source):
     request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic"
     # 二进制方式打开图片文件
     params = {"image": source}
-    access_token = '24.da00c8904326fa4c9753a31f9d520726.2592000.1613719265.282335-23566827'
+    access_token = ''
     request_url = request_url + "?access_token=" + access_token
     headers = {'content-type': 'application/x-www-form-urlencoded'}
     response = requests.post(request_url, data=params, headers=headers)
@@ -138,8 +138,3 @@ if __name__ == '__main__':
         userid = information['_hash_']['userid']
         print("Accesstoken:" + accesstoken)
         print("Userid:" + userid)
-"""
-username = "2020110019"
-password = "097256"
-print(login(username,password))
-"""

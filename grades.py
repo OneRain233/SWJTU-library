@@ -72,8 +72,8 @@ def login(username,password):
 
 def get_grades():
     global session
-    username = "2020110019"
-    password = "Rainrain0109."
+    username = ""
+    password = ""
     doLogin = login(username,password)
     print(doLogin)
     session.get(url="http://jwc.swjtu.edu.cn/vatuu/UserFramework")
